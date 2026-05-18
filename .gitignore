@@ -1,0 +1,19 @@
+# Local secrets and machine-specific config
+.env
+.env.local
+.env.*.local
+*.token
+*.secret
+*.key
+
+# Logs and local runtime output
+*.log
+logs/
+tmp/
+temp/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
