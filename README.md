@@ -17,43 +17,6 @@ codex-pet/
 |       `-- spritesheet.webp
 ```
 
-新增 pet 时，请放在 `pets/<pet-name>/` 目录下，并至少包含：
-
-- `pet.json`
-- `spritesheet.webp`
-
-`pet.json` 中的 `spritesheetPath` 字段应指向同目录下的 `spritesheet.webp`。不要写成本机绝对路径，例如 `C:\...`、`D:\...`、`/Users/...` 或 `/home/...`。
-
-## Windows 安装方式
-
-在 PowerShell 中从仓库根目录运行：
-
-```powershell
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\pets"
-Copy-Item -Recurse ".\pets\<pet-name>" "$env:USERPROFILE\.codex\pets\"
-```
-
-例如：
-
-```powershell
-Copy-Item -Recurse ".\pets\lili-squirrel" "$env:USERPROFILE\.codex\pets\"
-```
-
-## macOS / Linux 安装方式
-
-在终端中从仓库根目录运行：
-
-```bash
-mkdir -p ~/.codex/pets
-cp -R ./pets/<pet-name> ~/.codex/pets/
-```
-
-例如：
-
-```bash
-cp -R ./pets/lili-squirrel ~/.codex/pets/
-```
-
 ## 使用方式
 
 1. 选择一个 pet 文件夹，例如 `pets/lili-squirrel`。
